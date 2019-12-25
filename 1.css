@@ -82,7 +82,7 @@ body{
 
 }
 .carousel{
-	
+	position: relative;
 	/* border: 1px solid blue; */
 	width: 1200px;
 	height: 500px;
@@ -292,7 +292,7 @@ body{
 }
 .font{
 	position: absolute;
-	right: 139px;
+	right: 0px;
 }
 .font div{
 	color: white;
