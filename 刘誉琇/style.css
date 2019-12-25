@@ -1,0 +1,623 @@
+	<style>
+	*{
+	padding: 0;
+	margin: 0;
+}
+ul,li{
+	list-style: none;
+}
+.abackground{
+	background-image: url('images/back1.jpg'); 
+	/*background-color:rgba(0,0,0,0.1);*/
+	opacity: 0.8; 
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: auto;
+}
+.abody1{
+	width: 1500px;
+	height: 100vh;
+	height: 500%;
+	margin: 0 auto;
+	background: black;
+	overflow: hidden;
+}
+.ahead{
+	width: 100%;
+	height: 80px;	
+	text-align: center;
+	line-height: 80px;
+	background: red;
+	margin: 0 auto;
+}
+/*.ahead1{
+	background-image: url("images/navhead.jpg"); 
+	width: 100%;
+	height: 110px;
+	margin: 0 auto;
+}*/
+.headspan{
+	color: #f9bb68;
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 50px;
+}
+
+#box{
+	width: 1500px;
+	height: 600px;
+	border: 1px solid red;
+	border-left: none;
+	border-right: none;	
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.slider{
+	width: 10500px;
+	position: absolute;
+	left: -1500px;
+}
+.slide{
+	width: 1500px;
+	overflow: hidden;
+	float: left;
+}
+#box>span{
+	display: block;
+	width: 50px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	cursor: pointer;   //鼠标箭头呈手状
+	top: 240px;
+	background: rgb(255,0,0);
+	font-size: 30px;
+	position: absolute;
+	opacity: 0;  //完全透明
+}
+#left{
+	top: 240px;
+	left: 30px;
+}
+.nav{
+	height: 600px;
+	position: absolute;
+	right: 100px;
+	background-color: rgba(0,0,0,0.5); 
+}
+.nav>li{
+	/*background-color: rgb(76,76,76,0.25);*/
+	/*opacity: 0.25；*/
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 80px;
+	width: 250px;
+	height: 120px;
+}
+.nav .active{
+	background: red;
+}
+.junshi{
+	text-align: center;	
+	width: 1500px;
+	height: 970px;
+	margin: 0 auto;
+	border: 1px solid red;
+	border-left: none;
+	border-right: none;		
+	position: relative;
+	overflow: hidden;
+}
+.junshihead{
+	border-bottom: 2px solid red;
+	margin-bottom: 20px;
+	width: 1500px;
+	height: 80px;
+	line-height: 80px;
+}
+.junshi1{
+	margin-left: 10px;
+	width: 700px;
+	height: 1000px;
+	float: left;
+}
+.junshi2{
+	float: left;
+	margin-left: 25px;
+}
+.junshi3{
+	margin-top: 35px;
+	margin-left: 25px;
+	float: left;
+}
+.junshihide1{
+	width: 750px;
+	height: 400px;
+	position: absolute;
+	top: 102px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	display: none;
+}
+.junshi2:hover .junshihide1{
+	display: block;
+}
+.junshihide2{
+	width: 750px;
+	height: 400px;
+	position: absolute;
+	top: 542px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	display: none;		
+}
+.junshi3:hover .junshihide2{
+	display: block;
+}
+.zhengzhi{
+	text-align: center;	
+	width: 1500px;
+	height: 430px;
+	margin: 0 auto;
+	border: 1px solid red;
+	border-left: none;
+	border-right: none;		
+	position: relative;
+	overflow: hidden;
+}
+.zhengzhihead{
+	border-bottom: 2px solid red;
+	margin-bottom: 20px;
+	width: 1500px;
+	height: 80px;
+	line-height: 80px;
+}
+.zhengzhi1{
+	margin-left: 15px;
+	float: left;
+}
+.zhengzhi2{
+	margin-left: 15px; 
+	float: left;
+}
+.zhengzhi3{
+	margin-left: 10px;
+	float: left;
+}
+.zhengzhihide1{
+	width: 480px;
+	height: 300px;
+	position: absolute;
+	top: 102px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	display: none;
+}
+.zhengzhi1:hover .zhengzhihide1{
+	display: block;
+}
+.zhengzhihide2{
+	width: 470px;
+	height: 300px;
+	position: absolute;
+	left: 520px;
+	top: 102px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	display: none;
+}
+.zhengzhi2:hover .zhengzhihide2{
+	display: block;
+}
+.zhengzhihide3{
+	width: 480px;
+	height: 300px;
+	position: absolute;
+	top: 102px;
+	left: 1000px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	display: none;
+}
+.zhengzhi3:hover .zhengzhihide3{
+	display: block;
+}
+.jingji{
+	text-align: center;	
+	width: 1500px;
+	height: 780px;
+	margin: 0 auto;
+	border: 1px solid red;
+	border-left: none;
+	border-right: none;		
+	position: relative;
+	overflow: hidden;
+}
+.jingjihead{
+	border-bottom: 2px solid red;
+	margin-bottom: 20px;	
+	width: 1500px;
+	height: 80px;
+	line-height: 80px;
+	float: left;
+}
+.jingji1{
+	width: 1000px;
+	height: 700px;
+	float: left;
+}
+.jingji2{
+	margin-top: 50px;
+	width: 499px;
+	float: left;
+}
+.jingji2>p{
+	text-indent: 2em;
+}
+.keji{
+	text-align: center;	
+	margin-top: 20px;
+	width: 1500px;
+	height: 765px;
+	margin: 0 auto;
+	text-align: center; 
+	border: 1px solid red;
+	border-left: none;
+	border-right: none;		
+	position: relative;
+	overflow: hidden;
+}
+.keji img{
+	cursor: pointer;
+	transition: all 0.6s;
+}
+.keji img:hover{
+	transform: scale(1.2);
+}
+.keji>p{
+	color: #fff;
+}
+.keji1{
+	text-indent: center;
+	width: 400px;
+	height: 325px;
+	margin-left: 40px;
+	float: left;
+}
+.keji2{
+	width: 400px;
+	height: 325px;
+	margin-left: 40px;
+
+	float: left;
+}
+.keji3{
+	width: 400px;
+	height: 325px;
+	margin-left: 40px;
+
+	float: left;
+}
+.keji4{
+	width: 400px;
+	height: 320px;
+	margin-left: 40px;
+
+	float: left;
+}
+.keji5{
+	width: 400px;
+	height: 320px;
+	margin-left: 40px;
+	float: left;
+}
+.keji6{
+	width: 400px;
+	height: 320px;
+	margin-left: 40px;
+	float: left;
+}
+.kejihead{
+	border-bottom: 2px solid red;
+	margin-bottom: 30px;
+	width: 1500px;
+	height: 80px;
+	line-height: 80px;
+}
+.tiyu{	
+	text-align: center; 
+	width: 1600px;
+	height: 540px;
+	margin: 0 auto;
+	border: 1px solid red;
+	border-left: none;
+	border-right: none;	
+	position: relative;
+	overflow: hidden;
+}
+.tiyuhead{
+	width: 1500px;
+	height: 80px;
+	line-height: 80px;
+	float: left;
+}
+.tiyu img{
+	cursor: pointer;
+	transition: all 0.6s;
+}
+.tiyu img:hover{
+	transform: scale(1.2);
+}
+.tiyu1{
+	margin-left: 15px;
+	width: 320px;
+	float: left;
+}
+.tiyu2{
+	margin-left: 35px;
+	width: 600px;
+	float: left;
+}
+.tiyu3{
+	width: 500px;
+	height: 500px;
+	margin-left: 30px;
+	float: left;
+	position: relative;
+}
+.tiyu3>img{
+	margin-left: 35px;
+	margin-bottom: 30px;
+	float: left;
+}
+.tiyu3hidden1{
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px; 
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 150px;
+	left: 35px;
+	/*display: none;*/
+}
+.tiyu3-3-1:hover .tiyu3hidden1{
+	display: block;
+}
+.tiyu3hidden1>p{
+	color: #fff;
+}
+.tiyu3hidden2{
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px; 
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 150px;
+	left: 270px;
+	/*display: none;*/
+}
+.tiyu3-3-2:hover .tiyu3hidden2{
+	display: block;
+}
+.tiyu3hidden2>p{
+	color: #fff;
+}
+.tiyu3hidden3{
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px; 
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 380px;
+	left: 35px;
+	/*display: none;*/
+}
+.tiyu3-3-3:hover .tiyu3hidden3{
+	display: block;
+}
+.tiyu3hidden3>p{
+	color: #fff;
+}
+.tiyu3hidden4{
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px; 
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 380px;
+	left: 270px;
+	/*display: none;*/
+}
+.tiyu3-3-4:hover .tiyu3hidden4{
+	display: block;
+}
+.tiyu3hidden4>p{
+	color: #fff;
+}
+
+  #cemian{
+    position:absolute;
+    background:#ccc;
+    opacity:50;
+    width:70px;
+    height:500px;
+    top:200px;
+    right:-190px;
+    z-index:666;
+  }
+  #cemian li{
+   width:70px;
+   height:99px;
+   border:1px solid white;
+   background:white;
+   border-bottom:none;
+   font:top;
+
+  }
+  #shizheng{
+    position:fixed;
+    top:-70px;
+    left:350px;
+    width:300px;
+    height:150px;
+    background:url("C://Users//ASUS//Pictures//神州.jpg");
+    border-radius:20px; 
+    opacity:30;
+  }
+  #shizheng1{
+    position:fixed;
+    top:-70px;
+    left:650px;
+    width:300px;
+    height:150px;
+    background:url(".//PHOT5RLCzzET0f8RoONv1Jr7190808_920x700.jpg");
+    border-radius:20px; 
+    opacity:30;
+  }
+  #shizheng2{
+    position:fixed;
+    top:-70px;
+    left:950px;
+    width:300px;
+    height:150px;
+    background:url(".//中国馆 (2).jpg");
+    border-radius:20px; 
+    opacity:30;
+  }
+  #shizheng3{
+    position:fixed;
+    top:-70px;
+    left:1250px;
+    width:300px;
+    height:150px;
+    background:url(".//澳门回归.png");
+    border-radius:20px; 
+    opacity:30;
+  }
+  #shizheng4{
+    position:fixed;
+    top:-70px;
+    left:1650px;
+    width:300px;
+    height:150px;
+    background:url("C://Users//ASUS//Pictures//神州.jpg");
+    border-radius:20px; 
+    opacity:30;
+  }
+
+  #shizheng a{
+    font:left;
+    color:white;
+  }
+   #shizheng1 a{
+    font:left;
+    margin-left:70px;
+    color:white;
+  }
+   #shizheng2 a{
+    font:left;
+    margin-left:70px;
+    color:white;
+  }
+   #shizheng3 a{
+    font:left;
+    margin-left:70px;
+    color:white;
+  }
+   #shizheng4 a{
+    font:left;
+    margin-left:70px;
+    color:white;
+  }
+  #kuang2 li{
+     list-style:none;
+     margin-left:250px;
+     display:inline;
+  }
+  #kuang2 li a{
+    color:white;
+  }
+  #renwu{
+    display:inline;
+    position:fixed;
+    top:35px;
+    left:500px;
+    width:35px;
+    height:20px;
+    z-index:3;
+    color:white;
+  }
+  #s1{
+    height:80px;
+    width:1500px;
+    background:black;
+    position:fixed;
+    top:0px;
+    left:0px;
+    display:inline;
+    z-index:2;
+  }
+  #yinyue{
+    position:absolute;
+    top:0px;
+    left:1800px;
+    z-index:1;
+    display:inline;
+    opacity:0;
+  }
+  #s2{
+    height:80px;
+    width:380px;
+    background:black;
+    position:fixed;
+    top:0px;
+    left:1500px;
+    display:inline;
+    z-index:4;
+  }
+  #s3{
+    width:300px;
+    height:40px;
+    border:9px solid #ccc;
+    border-radius:8%;
+    background:white;
+    position:absolute;
+    top:10px;
+    left:1500px;
+    z-index:3;
+  }
+  #s4{
+    width:30px;
+    height:30px;
+    position:fixed;
+    z-index:2;
+    top:30PX;
+    left:1450px;
+  }
+  #hongqi{
+    width: 200px;
+    height: 100px;
+    position:absolute;
+    top:0px;
+    left:200px;
+    z-index:3;
+  }
+  </style>
+	<script src="animate.js"></script>
+	<head>
+    <meta charset="utf-8">
+  <title>祖国</title>
+  <style>
+ 
+  </style>
+  

@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>重大成就</title>
+	<style>
+	*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style: none;
+}
+body{
+	background-image: url('images/back1.jpg'); 
+}
+
+
+
+.abackground{
+	background-image: url('images/back1.jpg'); 
+	/*background-color:rgba(0,0,0,0.1);*/
+
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+/*	overflow: hidden;*/
+}
+.abody1{
+	width: 1500px;
+	margin: 0 auto;
+	background: black;
+
+}
+.ahead{
+	width: 100%;
+	height: 80px;	
+	text-align: center;
+	line-height: 80px;
+	background: red;
+	margin: 0 auto;
+}
+/*.ahead1{
+	background-image: url("images/navhead.jpg"); 
+	width: 100%;
+	height: 110px;
+	margin: 0 auto;
+}*/
+.headspan{
+	color: #f9bb68;
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 50px;
+}
+.tail{
+
+
+	margin:0px auto;
+	border: 1px solid black;
+	border-top: 5px solid #beab07;
+	height: 150px;
+	width: 100%;
+	background-image: linear-gradient(to right,#cc0033, #563a3e);
+
+}
+.relative{
+
+	line-height: 30px;
+	text-align: center;
+	width: 100%;
+	height: 30px;
+	background-image: linear-gradient(to right,#cc0033, #563a3e);
+
+}
+.relative span{
+	color: white;
+	
+
+}
+
+.passcard{
+	text-align: center;
+	color: white;
+	
+	
+	height: 120px;
+	margin:0px auto;
+	width: 1064px;
+
+}
+.passcard div{
+	float: left;
+	border-left: 0.3px solid #a05961;
+	height: 120px;
+	width: 264px;
+	font-size: 13px;
+
+}
+.passcard p{
+	margin-top:10px ;
+
+}
+#box{
+	width: 1500px;
+	height: 600px;
+	border: 1px solid red;
+	border-left: none;
+	border-right: none;	
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.slider{
+	width: 10500px;
+	position: absolute;
+	left: -1500px;
+}
+.slide{
+	width: 1500px;
+	overflow: hidden;
+	float: left;
+}
+#box>span{
+	display: block;
+	width: 50px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	cursor: pointer;   //鼠标箭头呈手状
+	top: 240px;
+	background: rgb(255,0,0);
+	font-size: 30px;
+	position: absolute;
+	opacity: 0;  //完全透明
+}
+#left{
+	top: 240px;
+	left: 30px;
+}
+.nav{
+	height: 600px;
+	position: absolute;
+	right: 100px;
+	background-color: rgba(0,0,0,0.5); 
+}
+.nav>li{
+	/*background-color: rgb(76,76,76,0.25);*/
+	/*opacity: 0.25；*/
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 80px;
+	width: 250px;
+	height: 120px;
+}
+.nav .active{
+	background: red;
+}
+.junshi{
+	text-align: center;	
+	width: 1500px;
+	height: 970px;
+	margin: 0 auto;
+	border: 1px solid red;
+	border-left: none;
+	border-right: none;		
+	position: relative;
+	overflow: hidden;
+}
+.junshihead{
+	border-bottom: 2px solid red;
+	margin-bottom: 20px;
+	width: 1500px;
+	height: 80px;
+	line-height: 80px;
+}
+.junshi1{
+	margin-left: 10px;
+	width: 700px;
+	height: 1000px;
+	float: left;
+}
+.junshi2{
+	float: left;
+	margin-left: 25px;
+}
+.junshi3{
+	margin-top: 35px;
+	margin-left: 25px;
+	float: left;
+}
+.junshihide1{
+	width: 750px;
+	height: 400px;
+	position: absolute;
+	top: 102px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	display: none;
+}
+.junshi2:hover .junshihide1{
+	display: block;
+}
+.junshihide2{
+	width: 750px;
+	height: 400px;
+	position: absolute;
+	top: 542px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	display: none;		
+}
+.junshi3:hover .junshihide2{
+	display: block;
+}
+.zhengzhi{
+	text-align: center;	
+	width: 1500px;
+	height: 430px;
+	margin: 0 auto;
+	border: 1px solid red;
+	border-left: none;
+	border-right: none;		
+	position: relative;
+	overflow: hidden;
+}
+.zhengzhihead{
+	border-bottom: 2px solid red;
+	margin-bottom: 20px;
+	width: 1500px;
+	height: 80px;
+	line-height: 80px;
+}
+.zhengzhi1{
+	margin-left: 15px;
+	float: left;
+}
+.zhengzhi2{
+	margin-left: 15px; 
+	float: left;
+}
+.zhengzhi3{
+	margin-left: 10px;
+	float: left;
+}
+.zhengzhihide1{
+	width: 480px;
+	height: 300px;
+	position: absolute;
+	top: 102px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	display: none;
+}
+.zhengzhi1:hover .zhengzhihide1{
+	display: block;
+}
+.zhengzhihide2{
+	width: 470px;
+	height: 300px;
+	position: absolute;
+	left: 520px;
+	top: 102px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	display: none;
+}
+.zhengzhi2:hover .zhengzhihide2{
+	display: block;
+}
+.zhengzhihide3{
+	width: 480px;
+	height: 300px;
+	position: absolute;
+	top: 102px;
+	left: 1000px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	display: none;
+}
+.zhengzhi3:hover .zhengzhihide3{
+	display: block;
+}
+.jingji{
+	text-align: center;	
+	width: 1500px;
+	height: 780px;
+	margin: 0 auto;
+	border: 1px solid red;
+	border-left: none;
+	border-right: none;		
+	position: relative;
+	overflow: hidden;
+}
+.jingjihead{
+	border-bottom: 2px solid red;
+	margin-bottom: 20px;	
+	width: 1500px;
+	height: 80px;
+	line-height: 80px;
+	float: left;
+}
+.jingji1{
+	width: 1000px;
+	height: 700px;
+	float: left;
+}
+.jingji2{
+	margin-top: 50px;
+	width: 499px;
+	float: left;
+}
+.jingji2>p{
+	text-indent: 2em;
+}
+.keji{
+	text-align: center;	
+	margin-top: 20px;
+	width: 1500px;
+	height: 765px;
+	margin: 0 auto;
+	text-align: center; 
+	border: 1px solid red;
+	border-left: none;
+	border-right: none;		
+	position: relative;
+	overflow: hidden;
+}
+.keji img{
+	cursor: pointer;
+	transition: all 0.6s;
+}
+.keji img:hover{
+	transform: scale(1.2);
+}
+.keji>p{
+	color: #fff;
+}
+.keji1{
+	text-indent: center;
+	width: 400px;
+	height: 325px;
+	margin-left: 40px;
+	float: left;
+}
+.keji2{
+	width: 400px;
+	height: 325px;
+	margin-left: 40px;
+
+	float: left;
+}
+.keji3{
+	width: 400px;
+	height: 325px;
+	margin-left: 40px;
+
+	float: left;
+}
+.keji4{
+	width: 400px;
+	height: 320px;
+	margin-left: 40px;
+
+	float: left;
+}
+.keji5{
+	width: 400px;
+	height: 320px;
+	margin-left: 40px;
+	float: left;
+}
+.keji6{
+	width: 400px;
+	height: 320px;
+	margin-left: 40px;
+	float: left;
+}
+.kejihead{
+	border-bottom: 2px solid red;
+	margin-bottom: 30px;
+	width: 1500px;
+	height: 80px;
+	line-height: 80px;
+}
+.tiyu{	
+	text-align: center; 
+	width: 1600px;
+	height: 540px;
+	margin: 0 auto;
+	border: 1px solid red;
+	border-left: none;
+	border-right: none;	
+	position: relative;
+	overflow: hidden;
+}
+.tiyuhead{
+	width: 1500px;
+	height: 80px;
+	line-height: 80px;
+	float: left;
+}
+.tiyu img{
+	cursor: pointer;
+	transition: all 0.6s;
+}
+.tiyu img:hover{
+	transform: scale(1.2);
+}
+.tiyu1{
+	margin-left: 15px;
+	width: 320px;
+	float: left;
+}
+.tiyu2{
+	margin-left: 35px;
+	width: 600px;
+	float: left;
+}
+.tiyu3{
+	width: 500px;
+	height: 500px;
+	margin-left: 30px;
+	float: left;
+	position: relative;
+}
+.tiyu3>img{
+	margin-left: 35px;
+	margin-bottom: 30px;
+	float: left;
+}
+.tiyu3hidden1{
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px; 
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 150px;
+	left: 35px;
+	/*display: none;*/
+}
+.tiyu3-3-1:hover .tiyu3hidden1{
+	display: block;
+}
+.tiyu3hidden1>p{
+	color: #fff;
+}
+.tiyu3hidden2{
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px; 
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 150px;
+	left: 270px;
+	/*display: none;*/
+}
+.tiyu3-3-2:hover .tiyu3hidden2{
+	display: block;
+}
+.tiyu3hidden2>p{
+	color: #fff;
+}
+.tiyu3hidden3{
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px; 
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 380px;
+	left: 35px;
+	/*display: none;*/
+}
+.tiyu3-3-3:hover .tiyu3hidden3{
+	display: block;
+}
+.tiyu3hidden3>p{
+	color: #fff;
+}
+.tiyu3hidden4{
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px; 
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 380px;
+	left: 270px;
+	/*display: none;*/
+}
+.tiyu3-3-4:hover .tiyu3hidden4{
+	display: block;
+}
+.tiyu3hidden4>p{
+	color: #fff;
+}
+
+  #cemian{
+    position:absolute;
+    background:#ccc;
+    opacity:50;
+    width:70px;
+    height:500px;
+    top:200px;
+    right:-190px;
+    z-index:666;
+  }
+  #cemian li{
+   width:70px;
+   height:99px;
+   border:1px solid white;
+   background:white;
+   border-bottom:none;
+   font:top;
+
+  }
+  #shizheng{
+    position:fixed;
+    top:-70px;
+    left:350px;
+    width:300px;
+    height:150px;
+    background:url("images//神州.jpg");
+    border-radius:20px; 
+    opacity:30;
+  }
+  #shizheng1{
+    position:fixed;
+    top:-70px;
+    left:650px;
+    width:300px;
+    height:150px;
+    background:url("images//PHOT5RLCzzET0f8RoONv1Jr7190808_920x700.jpg");
+    border-radius:20px; 
+    opacity:30;
+  }
+  #shizheng2{
+    position:fixed;
+    top:-70px;
+    left:950px;
+    width:300px;
+    height:150px;
+    background:url("images//中国馆 (2).jpg");
+    border-radius:20px; 
+    opacity:30;
+  }
+  #shizheng3{
+    position:fixed;
+    top:-70px;
+    left:1250px;
+    width:300px;
+    height:150px;
+    background:url("images//澳门回归.png");
+    border-radius:20px; 
+    opacity:30;
+  }
+  #shizheng4{
+    position:fixed;
+    top:-70px;
+    left:1650px;
+    width:300px;
+    height:150px;
+    background:url("images//神州.jpg");
+    border-radius:20px; 
+    opacity:30;
+  }
+
+  #shizheng a{
+    font:left;
+    color:white;
+  }
+   #shizheng1 a{
+    font:left;
+    margin-left:70px;
+    color:white;
+  }
+   #shizheng2 a{
+    font:left;
+    margin-left:70px;
+    color:white;
+  }
+   #shizheng3 a{
+    font:left;
+    margin-left:70px;
+    color:white;
+  }
+   #shizheng4 a{
+    font:left;
+    margin-left:70px;
+    color:white;
+  }
+  #kuang2 li{
+     list-style:none;
+     margin-left:250px;
+     display:inline;
+  }
+  #kuang2 li a{
+    color:white;
+  }
+  #renwu{
+    display:inline;
+    position:fixed;
+    top:35px;
+    left:500px;
+    width:35px;
+    height:20px;
+    z-index:3;
+    color:white;
+  }
+  #s1{
+    height:80px;
+    width:1500px;
+    background:black;
+    position:fixed;
+    top:0px;
+    left:0px;
+    display:inline;
+    z-index:2;
+  }
+  #yinyue{
+    position:absolute;
+    top:0px;
+    left:1800px;
+    z-index:1;
+    display:inline;
+    opacity:0;
+  }
+  #s2{
+    height:80px;
+    width:380px;
+    background:black;
+    position:fixed;
+    top:0px;
+    left:1500px;
+    display:inline;
+    z-index:4;
+  }
+  #s3{
+    width:300px;
+    height:40px;
+    border:9px solid #ccc;
+    border-radius:8%;
+    background:white;
+    position:absolute;
+    top:10px;
+    left:1500px;
+    z-index:3;
+  }
+  #s4{
+    width:30px;
+    height:30px;
+    position:fixed;
+    z-index:2;
+    top:30PX;
+    left:1450px;
+  }
+  #hongqi{
+    width: 200px;
+    height: 100px;
+    position:absolute;
+    top:0px;
+    left:200px;
+    z-index:3;
+  }
+  </style>
+	<script src="animate.js"></script>
+	<head>
+    <meta charset="utf-8">
+  <title>祖国</title>
+  <style>
+ 
+  </style>
+  
+<script type ="text/javascript" src="../jqurey.js"></script>
+<script>
+		var index=0;
+	 var colorIndex=0;
+	$(document).ready(function() {
+	    $("body").click(function(e) {         //鼠标点击事件
+	        var arr = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+	        var colorArr = new Array("red", "orange", "yellow", "green", "blue", "indigo", "purple");
+	        var tmp = $("<span/>").text(arr[index]);    //添加一个span标签显示arr数组对应的第一个索引内容
+	        index = (index + 1) % arr.length;           //取余,从0到arr数组长度，一直点击一直循环
+	        var color = colorArr[colorIndex];
+	        colorIndex = (colorIndex + 1) % colorArr.length;
+	        var x = e.pageX, y = e.pageY;   //鼠标点击的x,y点坐标
+	        tmp.css({
+	            "z-index" : 999,            //堆叠顺序，越大越优先显示
+	            "top" : y - 20,             //y点坐标往上20像素
+	            "left" : x+20,                 //x点坐标
+	            "position" : "absolute",    //绝对定位
+	            "font-weight" : "bold",     //加粗
+	            "color" : color,            //颜色
+	            "font-size" : 20            //字体大小
+	        });
+	        $("body").append(tmp);
+	        tmp.animate({                   //自定义动画,样式--时间--功能
+	            "top" : y - 200, 
+	            "left":x + 200 ,        //y点坐标往上200像素
+	            "opacity" : 0               //饱和度,0即是透明了
+	        }, 2000, function() {           //2000毫秒
+	            tmp.remove();               //消失
+	        });
+	    });
+	});
+window.onload=function(){
+var x=1;
+var anniu=document.getElementById('anniu');
+var s4=document.getElementById("s4");
+var s3=document.getElementById("s3");
+var s1=document.getElementById("s1");
+var s2=document.getElementById("s2");
+var s6=document.getElementById('s6');
+var w1=document.getElementById('w1');
+var w2=document.getElementById('w2');
+var w3=document.getElementById('w3');
+var w4=document.getElementById('w4');
+var body=document.getElementById("body");
+var yinyue=document.getElementById('yinyue');
+var renwu=document.getElementById('renwu');
+var x1=document.getElementById('x1');
+var e=0;
+var de;
+var d1,d2,d3,d4;
+var kuang2=document.getElementById('kuang2');
+var a=document.getElementsByTagName('a');
+for(var t=0;t<a.length;t++){
+    a[t].onmouseover=function(){
+         this.style.color="red";
+}
+}
+for(var t=0;t<a.length;t++){
+    a[t].onmouseout=function(){
+         this.style.color="white";
+}
+}
+
+renwu.onmouseover=function(){
+    clearTimeout(de);
+    renwu.style.color="red";
+    var d=-80;
+    var y=setInterval(function(){
+        if(d!=80){
+            shizheng.style.top=d+"px";
+            d+=2;
+        }
+        else{
+            clearInterval(y)
+        }
+    },1);
+}
+
+renwu.onmouseout=shizheng.onmouseout=function(){
+    de=setTimeout(function(){
+    renwu.style.color="white";
+     var d=80;
+    var y=setInterval(function(){
+        if(d!=-80){
+            shizheng.style.top=d+"px";
+            d-=2;
+        }
+        else{
+            clearInterval(y);
+        }
+    },1);},1000);
+}
+
+shizheng.onmouseover=function(){
+    clearTimeout(de);
+}
+w1.onmouseover=function(){
+    clearTimeout(d1);
+    w1.style.color="red";
+    var d=-80;
+    var y=setInterval(function(){
+        if(d!=80){
+            shizheng1.style.top=d+"px";
+            d+=2;
+        }
+        else{
+            clearInterval(y)
+        }
+    },1);
+}
+w1.onmouseout=shizheng1.onmouseout=function(){
+    d1=setTimeout(function(){
+    w1.style.color="white";
+     var d=80;
+    var y=setInterval(function(){
+        if(d!=-80){
+            shizheng1.style.top=d+"px";
+            d-=2;
+        }
+        else{
+            clearInterval(y);
+        }
+    },1);},1000);
+}
+shizheng1.onmouseover=function(){
+    clearTimeout(d1);
+}
+
+w2.onmouseover=function(){
+    clearTimeout(d2);
+    w2.style.color="red";
+    var d=-80;
+    var y=setInterval(function(){
+        if(d!=80){
+            shizheng2.style.top=d+"px";
+            d+=2;
+        }
+        else{
+            clearInterval(y)
+        }
+    },1);
+}
+w2.onmouseout=shizheng2.onmouseout=function(){
+    d2=setTimeout(function(){
+    w2.style.color="white";
+     var d=80;
+    var y=setInterval(function(){
+        if(d!=-80){
+            shizheng2.style.top=d+"px";
+            d-=2;
+        }
+        else{
+            clearInterval(y);
+        }
+    },1);},1000);
+}
+shizheng2.onmouseover=function(){
+    clearTimeout(d2);
+}
+w3.onmouseover=function(){
+    clearTimeout(d3);
+    w3.style.color="red";
+    var d=-80;
+    var y=setInterval(function(){
+        if(d!=80){
+            shizheng3.style.top=d+"px";
+            d+=2;
+        }
+        else{
+            clearInterval(y)
+        }
+    },1);
+}
+w3.onmouseout=shizheng3.onmouseout=function(){
+    d3=setTimeout(function(){
+    w3.style.color="white";
+     var d=80;
+    var y=setInterval(function(){
+        if(d!=-80){
+            shizheng3.style.top=d+"px";
+            d-=2;
+        }
+        else{
+            clearInterval(y);
+        }
+    },1);},1000);
+}
+shizheng3.onmouseover=function(){
+    clearTimeout(d3);
+}
+anniu.onmouseover=function(){
+    anniu.style.border="2px solid blue";
+}
+anniu.onmouseout=function(){
+    anniu.style.border="2px solid #ccc";
+}
+var so= document.getElementById('wo1');
+anniu.onclick=function(){
+         var y=100;
+         var c=100;
+         var str="<embed src='.//北京室内男声合唱团 - 亮剑-中国军魂.mp3'"
+         str+=" autostart='bool' loop='1' width='300px' height='200'> ";
+    if(x==1){
+         x=0;
+         var i=150;
+         yinyue.innerHTML=str;
+        var k=setInterval(function(){
+         if(anniu.offsetWidth<320 ||anniu.offsetHeight<220){
+        anniu.style.width=i+"px";
+        anniu.style.height=y+"px";
+        i+=2;
+        y+=1;}
+        else{
+            clearInterval(k);
+        }
+        },1)
+     }
+    else{
+            var p=390;
+            var t=220;
+            x=1;
+            yinyue.innerHTML="";
+           var w=setInterval(function(){
+            if(anniu.offsetHeight!=100){
+                  anniu.style.width=p+"px";
+                  anniu.style.height=t+"px";
+                  p-=2;
+                  t-=1;}
+                  else{
+                    clearInterval(w);
+                  }
+            },1);
+
+        }
+        
+}
+
+s4.onclick=function(){
+    var y=setInterval(function(){
+     s3.style.left=s3.offsetLeft-5+"px";
+     if(s3.offsetLeft==1170){
+        clearInterval(y);
+      }
+    },1);
+}
+s2.onclick=function(){
+     var y=setInterval(function(){
+        if(s3.offsetLeft==1500){
+        clearInterval(y);
+      }else{
+     s3.style.left=s3.offsetLeft+5+"px";}
+    },1);
+}
+
+
+}
+</script>
+
+</head>
+<body>
+	<div class="abackground">
+		<div class="ahead">
+				<span class="headspan">壮丽七十年</span>
+				<span class="headspan">回望重大成就</span>
+		</div>
+		<div class="ahead1">
+			
+		</div>
+		<div class="abody">
+		<div class="abody1">
+			<div  id="box">
+				<div class="slider" id="slider">
+					<div class="slide"><img src="images/ltiyu.jpg"></div>
+					<div class="slide"><img src="images/ljunshi2.jpg"></div>
+					<div class="slide"><img src="images/lzhengzhi.jpg"></div>
+					<div class="slide"><img src="images/ljingji.jpg"></div>
+					<div class="slide"><img src="images/lkeji.jpg"></div>
+					<div class="slide"><img src="images/ltiyu.jpg"></div>
+					<div class="slide"><img src="images/ljunshi2.jpg"></div>
+				</div>
+			<span id="left"><</span>
+			<ul class="nav" id="nav">
+				<li class="active">中国军事</li>
+				<li>中国政治</li>
+				<li>中国经济</li>
+				<li>中国科技</li>
+				<li>中国体育</li>
+			</ul>	
+		</div>
+		<div id="wo1" class="junshi">
+			<div class="junshihead">
+				<p style="font-size: 40px; margin-left: 60px; color: #fff;">军事</p>
+			</div>
+			<div class="junshi1">
+				<img src="images/junshi1.jpg">
+				<p style="font-size:24px; color: #fff; margin-top: 35px;">中国的“两弹一星”是20世纪下半叶中华民族创建的辉煌伟业:</p>
+				<p style="font-size: 20px; color: #fff; margin-top: 22px; line-height: 32px; text-indent: 2em;">
+				  1960年11月5日，中国仿制的第一枚导弹发射成功，1964年10月16日15时中国第一颗原子弹爆炸成功，使中国成为第五个有原子弹的国家；1967年6月17日上午8时中国第一颗氢弹空爆试验成功；1970年4月24日21时中国第一颗人造卫星发射成功，使中国成为第五个发射人造卫星的国家。
+				</p>
+			</div>
+			<div class="junshi2">
+				<img src="images/junshi2.jpg">
+				<div class="junshihide1">
+					<p style="font-size: 30px; text-align: center; margin-top: 65px;">辽宁舰</p>
+					<p style="font-size: 20px; margin-top: 30px; line-height: 38px; text-indent: 2em;">
+						辽宁号航空母舰，是中国人民解放军海军隶下的一艘可以搭载固定翼飞机的航空母舰，也是中国第一艘服役的航空母舰。
+						辽宁号航空母舰前身是苏联海军的库兹涅佐夫元帅级航空母舰次舰瓦良格号，在建造时遭逢苏联解体，建造工程中断。由中国海军建造改进
+						2012年9月25日，正式更名辽宁号，交付予中国人民解放军海军。							
+					</p>
+				</div>
+			</div>
+			<div class="junshi3">
+				<img src="images/junshi3.jpg">
+				<div class="junshihide2">
+					<p style="font-size: 30px; text-align: center; margin-top: 65px;">山东舰</p>
+					<p style="font-size: 20px; margin-top: 30px; line-height: 38px; text-indent: 2em;">
+						山东舰是中国首艘自主建造的国产航母，是中国真正意义上的第一艘国产航空母舰。 山东舰完全由我国自主设计，自主配套，自主建设，具有大型作战平台，拥有更大的机库，可停放更多航载机，舰岛缩小甲板面积更大，供航载机使用空间更大。2019年12月17日，经中央军委批准，中国第一艘国产航母命名为“中国人民解放军海军山东舰”，舷号为“17”。山东舰在海南三亚某军港交付海军。
+					</p>
+				</div>
+
+					
+				
+			</div>
+		</div>
+		<div class="zhengzhi">
+			<div class="zhengzhihead">
+				<p style="font-size: 40px; margin-left: 60px; color: #fff;">政治</p>
+			</div>
+			<div class="zhengzhi1">
+				<img src="images/zhengzhi1.jpg">
+				<div class="zhengzhihide1">
+					<p style="font-size: 30px; text-align: center; margin-top: 65px;">恢复联合国合法席位</p>
+					<p style="font-size: 20px; margin-top: 30px; line-height: 38px; text-indent: 2em;">
+						1971年10月，第二十六届联合国大会以压倒性多数通过2758号会议，决定恢复中华人民共和国在联合国合法权利。11月，五星红旗第一次在联合国升起。
+					</p>
+				</div>
+			</div>
+			<div class="zhengzhi2">
+				<img src="images/zhengzhi2.jpg">
+				<div class="zhengzhihide2">
+					<p style="font-size: 30px; text-align: center; margin-top: 35px;">提出“一国两制构想”</p>
+					<p style="font-size: 20px; margin-top: 20px; line-height: 38px; text-indent: 2em;">
+						1982年1月，邓小平在会见美国华人协会主席李耀滋时，首次提出“一个国家，两种制度”概念。1983年6月，邓小平会见美国新泽西州西东大学教授杨力宇，再次阐述“一国两制”构想。
+						“香港回归”，使“一国两制”构想成为现实。
+					</p>				
+				</div>
+			</div>
+			<div class="zhengzhi3">
+				<img src="images/zhengzhi3.jpg">
+				<div class="zhengzhihide3">
+					<p style="font-size: 30px; text-align: center; margin-top: 35px;">提出建设“一带一路”</p>
+					<p style="font-size: 20px; margin-top: 20px; line-height: 38px; text-indent: 2em;">
+						依靠中国与有关国家既有的双多边机制，借助既有的、行之有效的区域合作平台，高举和平发展的旗帜，积极发展与沿线国家的经济合作伙伴关系，共同打造政治互信、经济融合、文化包容的利益共同体、命运共同体和责任共同体。
+					</p>				
+			</div>
+			</div>
+		</div>
+		<div class="jingji">
+			<div class="kejihead">
+				<p style="font-size: 40px; margin-left: 60px; color: #fff;">经济</p>
+			</div>
+			<div class="jingji1">
+				<img src="images/jingji1.jpg">
+			</div>
+			<div class="jingji2">
+				<p style="color: #fff; font-size: 20px;">
+					从一穷二白、百废待兴，到经济总量超90万亿元、成为世界第二大经济体，过去70年，中国创造了经济史上罕见的发展速度。回望新中国经济70年，一方面是经济总量不断增大；另一方面，是产业结构不断优化调整。1952年，我国的GDP是679亿元；2018年，GDP突破90万亿元大关，绝对值比1952年增长了约1325倍。在人均GDP方面，从1952年的119元，上升到2018年的64644元，增长约542倍。GDP从600亿到90万亿元：1952年，我国GDP总量为679亿元。在国民经济迅速恢复和发展的基础上，1953年开始执行发展国民经济的第一个五年计划，成为我国工业化的起点。
+				</p>
+				<p style="color: #fff; font-size: 20px;">
+					国家统计局数据显示，2017年，我国国内生产总值按不变价计算比1978年增长33.5倍，年均增长9.5%，平均每8年翻一番，远高于同期世界经济2.9%左右的年均增速，在全球主要经济体中名列前茅。这40年来，我国经济总量连上新台阶，增量规模显著扩大。1978年，我国国内生产总值只有3645亿元，之后连续跨越，1986年上升到万亿元，1991年上升到2万亿元，2001年突破10万亿元大关，2006年超过20万亿元，2017年首次站上80万亿元的历史新台阶。2017年当年经济增量折合1.2万亿美元，相当于2016年全球第十四大经济体澳大利亚的经济总量。2018年，经济总量超过90万亿元。
+				</p>
+			</div>
+		</div>
+		<div class="keji">
+			<div class="kejihead">
+				<p style="font-size: 40px; margin-left: 60px; color: #fff;">科技</p>
+			</div>
+			<div class="keji1" style="margin-left: 105px;">
+				<img src="images/keji1.jpg">
+				<p style="color: #fff; font-size: 20px; margin-top: 20px;">袁隆平——杂交水稻之父</p>
+			</div>
+			<div class="keji2">
+				<img  src="images/keji2.jpg">
+				<p style="color: #fff; font-size: 20px;margin-top: 20px;">中国高铁</p>
+			</div>			
+			<div class="keji3">
+				<img src="images/keji3.jpg">
+				<p style="color: #fff; font-size: 20px; margin-top: 20px;">屠呦呦——抗疟疾青蒿素</p>
+			</div>
+			<div class="keji4" style="margin-left: 105px;">
+				<img src="images/keji4.jpg">
+				<p style="color: #fff; font-size: 20px;margin-top: 20px;">全球首科量子卫星——墨子号</p>
+			</div>
+			<div class="keji5">
+				<img src="images/keji5.jpg">
+				<p style="color: #fff; font-size: 20px; margin-top: 20px;">世界最长跨海大桥-港珠澳大桥</p>
+			</div>
+			<div class="keji6">
+				<img src="images/keji6.jpg">
+				<p style="color: #fff; font-size: 20px; margin-top: 20px;" >世界超级计算机——神威·太湖之光</p>
+			</div>												
+			
+		</div>
+
+		<div class="tiyu">
+			<div class="kejihead">
+				<p style="font-size: 40px; margin-left: 60px; color: #fff;">体育</p>
+			</div>
+			<div class="tiyu1">
+				<img src="images/tiyu1.jpg">
+				<p style="color: #fff; font-size: 28px; margin-top: 65px;">1984年获得首枚奥运金牌</p>
+			</div>
+			<div class="tiyu2">
+				<img src="images/tiyu2.jpg">
+				<p style="color: #fff; font-size: 28px; margin-top: 30px; ">2008年北京奥运会</p>
+				<p style="color: #fff; font-size: 28px;">中国首次获得奥运会主办权</p>
+			</div>
+			<div class="tiyu3">
+				<div class="tiyu3hidden1"><p>2022冬奥会</p></div>
+				<div class="tiyu3hidden2"><p>冰球</p></div>
+				<div class="tiyu3hidden3"><p>滑雪</p></div>
+				<div class="tiyu3hidden4"><p>速滑</p></div>
+				<img class="tiyu3-3-1" src="images/tiyu3-1.jpg">
+				<img src="images/tiyu3-2.jpg" class="tiyu3-3-2">
+				<img src="images/tiyu3-3.jpg" class="tiyu3-3-3">
+				<img src="images/tiyu3-4.jpg" class="tiyu3-3-4">
+			</div>
+		</div>				
+
+
+		</div>	
+<div class="tail">
+		<div class="relative">
+			
+				<span style="margin-right: 20px;">联系我们</span>
+				<span style="margin-right: 6px;">|</span>
+				<span style="margin-left: 20px;">版权声明</span>
+			
+
+		</div>
+		<div class="passcard">
+			
+			<div style="border: 0px">
+				<p>实名登陆</p>
+				<p>快速注册</p>
+				<p>找回密码</p>
+				<p>修改密码</p>
+			</div>
+			<div>
+				<p>快速支付</p>
+				<p>手机刷脸</p>
+				<p>人脸识别</p>
+				<p>用卡支付</p>
+				
+			</div>
+			<div>
+				<p>联系建议</p>
+				<p>备案信息</p>
+				<p>修改时间</p>
+				<p>使用说明</p>
+			</div>
+			<div>
+				<p>定制服务</p>
+				<p>漏洞提交</p>
+				<p>作品完善</p>
+				<p>提交修改</p>
+					
+				
+			</div>
+
+			
+		</div>
+</div>				
+		</div>	
+
+	</div>
+
+	<a href="javascript:;" id="renwu">成就</a>
+
+<div id="shizheng">
+<a style="position:relative;left:50px;top:20px;" href="javascript:;">山东舰</a>
+<a style="position:relative;left:120px;top:20px;" href="javascript:;">澳门回归</a>
+<a style="position:relative;left:-80px;top:60px;" href="javascript:;">北京奥运会</a>
+<a style="position:relative;left:-20px;top:60px;" href="javascript:;">世博会</a>
+</div>
+<div id="shizheng1">
+<a style="position:relative;left:-30px;top:20px;" href="javascript:;">回到联合国</a>
+<a style="position:relative;left:-50px;top:20px;" href="javascript:;">一国两制</a>
+<a style="position:relative;left:-20px;top:35px;" href="javascript:;">一带一路</a>
+<a style="position:relative;left:-40px;top:35px;" href="javascript:;">外交</a>
+</div>
+<div id="shizheng2">
+<a style="position:relative;left:-10px;top:20px;" href="javascript:;">杂交水稻</a>
+<a style="position:relative;left:-40px;top:20px;" href="javascript:;">高铁</a>
+<a style="position:relative;left:-10px;top:40px;" href="javascript:;">青蒿素</a>
+<a style="position:relative;left:-20px;top:40px;" href="javascript:;">墨子号</a>
+</div>
+<div id="shizheng3">
+<a style="position:relative;left:10px;top:20px;" href="javascript:;">奥运会</a>
+<a style="position:relative;left:-20px;top:20px;" href="javascript:;">冬奥会</a>
+<a style="position:relative;left:10px;top:40px;" href="javascript:;">冰滑</a>
+<a style="position:relative;left:-20px;top:40px;" href="javascript:;">速滑</a>
+</div>
+<div id="shizheng4">
+<a style="position:relative;left:-70px;top:20px;" href="javascript:;">奥运会</a>
+<a style="position:relative;left:40px;top:20px;" href="javascript:;">冬奥会</a>
+<a style="position:relative;left:-60px;top:100px;" href="javascript:;">速滑</a>
+<a style="position:relative;left:20px;top:100px;" href="javascript:;">冰滑</a>
+</div>
+<div id="s1">
+<ul id="kuang2" style="margin-left:540px;margin-top:35px;">
+<li ><a id="w1" href="javascript:;">政治</a></li>
+<li ><a id="w2" href="javascript:;">科技</a></li>
+<li ><a id="w3" href="javascript:;">体育</a></li>
+</ul>
+
+<div id="s2">
+</div>
+<div id="yinyue">
+</div>
+<div id="hongqi">
+<input id="anniu" type="button" style="width:150px; height:100px;background:url('images//红旗.jpg');"/>
+</div>
+<div id="s3" >
+<select style="height:30px;border:none;">
+<option value="查询伟人">查询成就</option>
+<option value="查询伟人">黄继光</option>
+<option value="查询伟人">雷锋</option>
+<option value="查询伟人">毛泽东</option>
+</select>
+|
+<input style="display:inline;height:25px;width:100px;border:none;position:relative;top:0px;" type="text"/>
+<input type="button" style="position:relative;display:inline;width:25px;height:30px; top:5px; background:url('images//sousuo2.png');"/>
+<img style="margin-left:10px;display:inline;position:relative; right:5px;top:5px; width:60px;height:30px;" src="images//毛.png"/>
+</div>
+<div id="s4">
+<img id="s5" src="images\QQ截图20191223143936.png">
+</div>
+<input type="button" style="background:url('images//QQ截图20191223143936.png'); top:100px;left:100px;">
+>
+
+
+</body>
+	<script type="text/javascript">
+		var box = document.getElementById("box");
+		var lilist = document.getElementById("nav").children;
+		var slider = document.getElementById("slider");
+		var left = document.getElementById("left");
+		var index = 1;
+		var timer;
+		var isMoving = false;
+		function next(){		
+			//未运动完时点击无效
+			if(isMoving == false){
+				isMoving = true;
+				index++;
+				navChange();
+				animate(slider,{left:-1500*index},function(){
+					if(index === 6){
+						slider.style.left = "-1500px";
+						index = 1;
+					}
+					isMoving = false;
+				});				
+				}
+		}
+		function prev(){
+			if(isMoving == false){
+				isMoving = true;
+				index--;
+				navChange();
+				animate(slider,{left:-1500*index},function(){
+					if(index === 0){
+						slider.style.left = "-7500px";
+						index = 5;
+					}				
+				});				
+			isMoving = false;
+		}
+		}		
+		var timer = setInterval(next,2000);
+
+		left.onclick =function(){
+			prev();
+	
+		};
+		//小按钮点击事件
+		for(var i = 0;i < lilist.length;i++){
+			lilist[i].idx = i;
+			lilist[i].onclick = function(){
+				index = this.idx+1;
+				navChange();
+				animate(slider,{left: -1500*index});
+			}
+		}
+		//小按钮背景色切换
+		function navChange(){
+			for(var i = 0; i < lilist.length;i++){
+				lilist[i].className = "";
+			}			
+			if(index == 6){
+				lilist[0].className = "active"; 
+			}
+			else if(index == 0){
+				lilist[4].className = "active";
+			}  
+			else{
+				lilist[index-1].className = "active"; 
+			}
+		}
+
+		//鼠标划入清定时器
+		box.onmouseover = function(){
+			animate(left,{opacity: 50});
+			clearInterval(timer);
+		}
+		//鼠标划出开定时器
+		box.onmouseout = function(){
+			animate(left,{opacity:0});
+			timer = setInterval(next,2000);
+		}
+	</script>
+	
+
+</html>
